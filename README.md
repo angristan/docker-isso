@@ -14,24 +14,24 @@ This image is automatically built by [Drone](https://drone.angristan.xyz/angrist
 
 - Based on Alpine Linux
 - Latest Isso version installed with `pip`
-- Ran as an unprivileged user *(see [environment variables](#environment-variables))*
+- Ran as an unprivileged user (see `UID` and `GID`)
 
 ### Build-time variables
 
-- **ISSO_VER** : version of Isso.
+- **`ISSO_VER`** : [version of Isso from PyPi](https://pypi.org/project/isso/#history) (`0.10.6`)
 
 ### Environment variables
 
-- **GID** : isso group id *(default : 4242)*
-- **UID** : isso user id *(default : 4242)*
+- **`GID`** : group id *(default : `4242`)*
+- **`UID`** : user id *(default : `4242`)*
 
 ### Volumes
 
-- **/isso/database** : location of the SQLite database
+- **`/isso/database`** : location of the SQLite database
 
 ### Port
 
-- **8080**
+- **`8080`**
 
 ## Usage
 
@@ -54,7 +54,7 @@ Please look at the [documentation](https://posativ.org/isso/docs/configuration/s
 
 ### Running the container
 
-```docker
+```sh
 docker run -d \
   --name isso \
   --mount type=bind,source="$(pwd)"/database,target=/isso/database \
