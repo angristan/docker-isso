@@ -1,6 +1,6 @@
 # Isso
 
-![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/docker/build/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/microbadger/image-size/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/microbadger/layers/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/docker/pulls/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/docker/stars/angristan/isso.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/microbadger/image-size/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/microbadger/layers/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/docker/pulls/angristan/isso.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/isso/](https://img.shields.io/docker/stars/angristan/isso.svg?maxAge=3600&style=flat-square)
 
 ![](https://posativ.org/isso/_static/isso.svg)
 
@@ -8,7 +8,7 @@
 
 Based on [wonderfall/isso](https://github.com/Wonderfall/dockerfiles/tree/master/isso).
 
-This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/isso/).
+This image is automatically built by [Drone](https://drone.angristan.xyz/angristan/docker-isso) and pushed to the [Docker Hub](https://hub.docker.com/r/angristan/isso/).
 
 ## Features
 
