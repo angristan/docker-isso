@@ -1,0 +1,28 @@
+image: docker:stable
+
+variables:
+  LATEST_VER: angristan/isso:latest
+  MAJOR_VER: angristan/isso:0
+  MINOR_VER: angristan/isso:0.10
+  PATCH_VER: angristan/isso:0.10.6
+
+stages:
+  - Build image
+  - Push to Docker Hub
+
+docker build:
+  stage: Build image
+  script:
+  - docker info
+  - docker build -t $LATEST_VER -t $MAJOR_VER -t $MINOR_VER -t $PATCH_VER .
+
+docker push:
+  stage: Push to Docker Hub
+  only:
+  - master
+  script:
+  - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USER" --password-stdin
+  - docker push $LATEST_VER && docker image rm $LATEST_VER
+  - docker push $MAJOR_VER && docker image rm $MAJOR_VER
+  - docker push $MINOR_VER && docker image rm $MINOR_VER
+  - docker push $PATCH_VER && docker image rm $PATCH_VER

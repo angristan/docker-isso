@@ -8,7 +8,9 @@
 
 Based on [wonderfall/isso](https://github.com/Wonderfall/dockerfiles/tree/master/isso).
 
-This image is automatically built by [Drone](https://drone.angristan.xyz/angristan/docker-isso) and pushed to the [Docker Hub](https://hub.docker.com/r/angristan/isso/).
+This image is automatically built by [GitLab CI](https://gitlab.com/angristan/docker-isso/pipelines) and pushed to the [Docker Hub](https://hub.docker.com/r/angristan/isso/).
+
+Besides manual updates, the images are automatically rebuilt every week to make sure all softwares in the images are up-to-date.
 
 ## Features
 
