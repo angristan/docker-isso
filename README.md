@@ -18,7 +18,7 @@ This image is automatically built by [GitLab CI](https://gitlab.com/angristan/do
 
 ### Build-time variables
 
-- **`ISSO_VER`** : [version of Isso from PyPi](https://pypi.org/project/isso/#history) (`0.12.1`)
+- **`ISSO_VER`** : [version of Isso from PyPi](https://pypi.org/project/isso/#history) (`0.12.2`)
 
 ### Environment variables
 
@@ -62,7 +62,7 @@ docker run -d \
   -p 80:7777 \
   -e UID=4242 \
   -e GID=4242 \
-  angristan/isso:0.12.1
+  angristan/isso:0.12.2
 ```
 
 ### Docker Compose
@@ -75,7 +75,7 @@ version: '2.3'
 services:
   isso:
     container_name: isso
-    image: angristan/isso:0.12.1
+    image: angristan/isso:0.12.2
     restart: always
     ports:
       - "127.0.0.1:8080:8080"

@@ -4,7 +4,7 @@ variables:
   LATEST_VER: angristan/isso:latest
   MAJOR_VER: angristan/isso:0
   MINOR_VER: angristan/isso:0.12
-  PATCH_VER: angristan/isso:0.12.1
+  PATCH_VER: angristan/isso:0.12.2
 
 stages:
   - Build image

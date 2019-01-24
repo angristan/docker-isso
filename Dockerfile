@@ -3,7 +3,7 @@ FROM alpine:3.8
 LABEL maintainer="angristan"
 LABEL source="https://github.com/angristan/docker-isso"
 
-ARG ISSO_VER=0.12.1
+ARG ISSO_VER=0.12.2
 
 ENV GID=4242 UID=4242
 
